@@ -32,9 +32,7 @@ public class Category {
 
 
     //区分validate校验分组
-    public interface Add extends Default {
-
-    }
+    public interface Add extends Default {}
 
     public interface Update extends Default {}
 
