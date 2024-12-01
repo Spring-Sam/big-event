@@ -15,6 +15,6 @@ public interface ArticleMapper {
     void add(Article article);
 
 
-    List<Article> list(String categoryId, String state, Integer currentUserId);
+    List<Article> querylist(String categoryId, String state, Integer currentUserId);
 }
 

@@ -38,7 +38,7 @@ public class ArticleServiceImpl implements ArticleService {
 
         Map<String,Object> claims = ThreadLocalUtil.get();
         Integer currentUserId  = Integer.valueOf(claims.get("id").toString());
-        List<Article> as = articleMapper.list(categoryId,state,currentUserId);
+        List<Article> as = articleMapper.querylist(categoryId,state,currentUserId);
         //Page提供方法，获取PageHelper的总数和记录
         Page<Article> page = (Page<Article>) as;
 
