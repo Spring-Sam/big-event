@@ -8,3 +8,7 @@ spring:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+
+aliyun:
+  ACCESS_KEY_ID: LTAI5tKdDpEHNdP6p8KqAPEy
+  SECRET_ACCESS_KEY: k8opWlvHvYNlegA05tuLaj0csNdLKC

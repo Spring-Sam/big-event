@@ -4,14 +4,26 @@ import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.OSSException;
+import com.samzhou.config.AliyunConfig;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.InputStream;
 
-public class AliOssUtil {
+public class   AliOssUtil {
     private static final String ENDPOINT = "https://oss-cn-beijing.aliyuncs.com";
-    private static final String ACCESS_KEY_ID = "LTAI5tKdDpEHNdP6p8KqAPEy";
-    private static final String SECRET_ACCESS_KEY = "k8opWlvHvYNlegA05tuLaj0csNdLKC";
+
+    AliyunConfig aliyunConfig = new AliyunConfig();
+
+    public static  String ACCESS_KEY_ID ;//"LTAI5tKdDpEHNdP6p8KqAPEy";
+
+    public static  String SECRET_ACCESS_KEY; //"k8opWlvHvYNlegA05tuLaj0csNdLKC";
+
     private static final String BUCKET_NAME = "big-event-sam";
+
+    public void init(){
+
+    }
+
 
     //上传文件,返回文件的公网访问地址
     public static String uploadFile(String objectName, InputStream inputStream){

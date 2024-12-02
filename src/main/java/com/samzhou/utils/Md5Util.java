@@ -24,7 +24,7 @@ public class Md5Util {
     /**
      * 生成字符串的md5校验值
      *
-     * @param s
+     * @param
      * @return
      */
     public static String getMD5String(String s) {
