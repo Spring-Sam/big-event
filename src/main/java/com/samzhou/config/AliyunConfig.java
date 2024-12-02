@@ -14,11 +14,14 @@ public class AliyunConfig {
     @Value("${aliyun.SECRET_ACCESS_KEY}")
     private String accessKeySecret;
 
+    @Value("${aliyun.endPoint}")
+    private String endPoint;
 
     @PostConstruct
     public void setValue() {
         AliOssUtil.ACCESS_KEY_ID = accessKeyId;
         AliOssUtil.SECRET_ACCESS_KEY = accessKeySecret;
+        AliOssUtil.ENDPOINT = endPoint;
     }
 
 }

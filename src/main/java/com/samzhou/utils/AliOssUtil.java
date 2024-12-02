@@ -10,9 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import java.io.InputStream;
 
 public class   AliOssUtil {
-    private static final String ENDPOINT = "https://oss-cn-beijing.aliyuncs.com";
-
-    AliyunConfig aliyunConfig = new AliyunConfig();
+    public static  String ENDPOINT;
 
     public static  String ACCESS_KEY_ID ;
 
@@ -20,9 +18,6 @@ public class   AliOssUtil {
 
     private static final String BUCKET_NAME = "big-event-sam";
 
-    public void init(){
-
-    }
 
 
     //上传文件,返回文件的公网访问地址

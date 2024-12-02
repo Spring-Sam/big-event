@@ -12,3 +12,4 @@ mybatis:
 aliyun:
   ACCESS_KEY_ID: LTAI5tKdDpEHNdP6p8KqAPEy
   SECRET_ACCESS_KEY: k8opWlvHvYNlegA05tuLaj0csNdLKC
+  endPoint: https://oss-cn-beijing.aliyuncs.com
