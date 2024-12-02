@@ -14,9 +14,9 @@ public class   AliOssUtil {
 
     AliyunConfig aliyunConfig = new AliyunConfig();
 
-    public static  String ACCESS_KEY_ID ;//"LTAI5tKdDpEHNdP6p8KqAPEy";
+    public static  String ACCESS_KEY_ID ;
 
-    public static  String SECRET_ACCESS_KEY; //"k8opWlvHvYNlegA05tuLaj0csNdLKC";
+    public static  String SECRET_ACCESS_KEY;
 
     private static final String BUCKET_NAME = "big-event-sam";
 
