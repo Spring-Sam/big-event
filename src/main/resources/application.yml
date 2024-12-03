@@ -1,20 +1,4 @@
+#指定生效环境
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/big_event
-    username: root
-    password: root
-  data:
-    redis:
-      host: localhost
-      port: 6379
-
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
-
-aliyun:
-  ACCESS_KEY_ID: LTAI5tKdDpEHNdP6p8KqAPEy
-  SECRET_ACCESS_KEY: k8opWlvHvYNlegA05tuLaj0csNdLKC
-  endPoint: https://oss-cn-beijing.aliyuncs.com
-
+  profiles:
+    active: test
